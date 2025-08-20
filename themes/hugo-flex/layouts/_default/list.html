@@ -1,0 +1,60 @@
+{{ define "main" }}
+<style>
+  .sidebar {
+    width: 300px;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+    }
+    .dm_con ul li > a {
+      padding: 5px 9px 5px 9px;
+    }
+  }
+</style>
+<div
+  class="page-wrapper"
+  style="
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin: auto;
+    padding: 3rem 1rem;
+  "
+>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    {{ with .Params.customSidebar }} {{ partial . . }} {{ else }} {{ partial
+    "default-sidebar.html" . }} {{ end }} {{ if .Params.showSpecialContent }}
+    <!-- <div class="special-content">
+      <h3>Exclusive Content</h3>
+      <p>
+        This content only shows for pages with
+        <code>showSpecialContent = true</code> in front matter.
+      </p>
+    </div>-->
+    {{ end }}
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    {{ $context := dict "page" . "level" 1 "isdateshown" false }} {{ partial
+    "heading.html" $context }} {{ .Content }} {{ range .Pages.GroupByPublishDate
+    "2006" }}
+    <div class="dm_con">
+      <h5>{{ .Key }}</h5>
+      <ul id="m_list">
+        {{ range .Pages }}
+        <li class="mantra">
+          {{ time.Format "2006-01-02" .PublishDate }} –
+          <a class="m_link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </main>
+</div>
+{{ end }}

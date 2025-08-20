@@ -1,0 +1,48 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'SRI DURGASAPTASHATI'
+theme = "hugo-flex"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Sri Durgasaptashati"
+  url = "/sri_durgasaptashati/"
+  weight = 2
+
+
+  [[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 3
+
+  [[menu.main]]
+  name = "About"
+  url = "#"
+  weight = 4
+  identifier = "About"
+
+  [[menu.main]]
+  name = "Web Development"
+  url = "/About/web-development/"
+  parent = "About"
+  weight = 1
+
+  [[menu.main]]
+  name = "SEO"
+  url = "/About/seo/"
+  parent = "About"
+  weight = 2
+
+paginate = 2

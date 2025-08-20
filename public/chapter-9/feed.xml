@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/xml/base.min.xml" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 9 on SRI DURGASAPTASHATI</title>
+    <link>http://localhost:1313/chapter-9/</link>
+    <description>Recent content in Chapter 9 on SRI DURGASAPTASHATI</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Aug 2025 15:57:14 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/chapter-9/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M 3</title>
+      <link>http://localhost:1313/chapter-1/m-3/</link>
+      <pubDate>Fri, 01 Aug 2025 15:57:14 +0530</pubDate>
+      <guid>http://localhost:1313/chapter-1/m-3/</guid>
+      <description>&lt;p&gt;hello i am dibyanshu&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>M 2</title>
+      <link>http://localhost:1313/chapter-1/m-2/</link>
+      <pubDate>Fri, 25 Jul 2025 17:49:09 +0530</pubDate>
+      <guid>http://localhost:1313/chapter-1/m-2/</guid>
+      <description>&#xA;&#xA;&#xA;&#xA;&lt;h5 id=&#34;audio&#34;&gt;&#xA;  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;http://localhost:1313/chapter-1/m-2/#audio&#34;&gt;Audio&lt;/a&gt;&#xA;&lt;/h5&gt;&#xA;&lt;audio controls controlsList=&#34;nodownload&#34;&gt;&#xA;  &lt;source src=&#34;http://localhost:1313/Audio/Jana Gana Mana.mp3&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;&lt;/audio&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>M 1</title>
+      <link>http://localhost:1313/chapter-1/m-1/</link>
+      <pubDate>Fri, 18 Jul 2025 14:40:36 +0530</pubDate>
+      <guid>http://localhost:1313/chapter-1/m-1/</guid>
+      <description>&#xA;&#xA;&#xA;&#xA;&lt;h1 id=&#34;main-title-of-the-page&#34;&gt;&#xA;  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;http://localhost:1313/chapter-1/m-1/#main-title-of-the-page&#34;&gt;Main Title of the Page&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;section-1&#34;&gt;&#xA;  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;http://localhost:1313/chapter-1/m-1/#section-1&#34;&gt;Section 1&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This is the content of the first section.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;section-2&#34;&gt;&#xA;  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;http://localhost:1313/chapter-1/m-1/#section-2&#34;&gt;Section 2&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Here is some more content in the second section.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h3 id=&#34;subsection-21&#34;&gt;&#xA;  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;http://localhost:1313/chapter-1/m-1/#subsection-21&#34;&gt;Subsection 2.1&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;This is a smaller subsection inside Section 2.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;section-3&#34;&gt;&#xA;  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;http://localhost:1313/chapter-1/m-1/#section-3&#34;&gt;Section 3&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;audio controls controlsList=&#34;nodownload&#34;&gt;&#xA;  &lt;source src=&#34;http://localhost:1313/Audio/Jana Gana Mana.mp3&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;&lt;/audio&gt;&#xA;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+{{ define "main" }}
+<style>
+  .sidebar {
+    width: 300px;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+</style>
+<div
+  class="page-wrapper"
+  style="
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin: auto;
+    padding: 3rem 1rem;
+  "
+>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    {{ with .Params.customSidebar }} {{ partial . . }} {{ else }} {{ partial
+    "default-sidebar.html" . }} {{ end }} {{ if .Params.showSpecialContent }}
+    <!--<div class="special-content">
+      <h3>Exclusive Content</h3>
+      <p>
+        This content only shows for pages with
+        <code>showSpecialContent = true</code> in front matter.
+      </p>
+    </div>-->
+    {{ end }}
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content" style="flex: 1">
+    {{ $context := dict "page" . "level" 1 "isdateshown" true }} {{ partial
+    "heading.html" $context }} {{ .Content }} {{ partial "tags.html" . }} {{
+    partial "comments.html" . }}
+    <!-- Prev / Next Navigation -->
+    <nav class="post-nav">
+      {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}">« Previous: {{ .Title }}</a>
+      {{ end }} {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}">Next: {{ .Title }} »</a>
+      {{ end }}
+    </nav>
+  </main>
+</div>
+{{ end }}
