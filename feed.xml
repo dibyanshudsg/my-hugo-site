@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://example.org/xml/base.min.xml" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SRI DURGASAPTASHATI</title>
+    <link>https://example.org/</link>
+    <description>Recent content on SRI DURGASAPTASHATI</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Aug 2025 18:05:38 +0530</lastBuildDate>
+    <atom:link href="https://example.org/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Myfile2</title>
+      <link>https://example.org/chapter-8/dsg/myfile2/</link>
+      <pubDate>Mon, 11 Aug 2025 18:05:38 +0530</pubDate>
+      <guid>https://example.org/chapter-8/dsg/myfile2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Myfile1</title>
+      <link>https://example.org/chapter-8/dsg/myfile/</link>
+      <pubDate>Mon, 11 Aug 2025 17:54:27 +0530</pubDate>
+      <guid>https://example.org/chapter-8/dsg/myfile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>M 1</title>
+      <link>https://example.org/chapter-8/m-1/</link>
+      <pubDate>Fri, 25 Jul 2025 17:14:25 +0530</pubDate>
+      <guid>https://example.org/chapter-8/m-1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
