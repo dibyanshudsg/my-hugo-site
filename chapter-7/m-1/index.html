@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/my-hugo-site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=my-hugo-site/livereload" data-no-instant defer></script>
      <meta charset="utf-8">
 
 
@@ -21,7 +21,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.147.9"> <title>M 1 | SRI DURGASAPTASHATI</title> <link href="http://localhost:1313/chapter-7/m-1/" rel="canonical">
+<meta name="generator" content="Hugo 0.147.9"> <title>M 1 | SRI DURGASAPTASHATI</title> <link href="http://localhost:1313/my-hugo-site/chapter-7/m-1/" rel="canonical">
 
 
 
@@ -34,7 +34,7 @@
 
 
     
-    <link href="/css/base.css" rel="stylesheet">
+    <link href="/my-hugo-site/css/base.css" rel="stylesheet">
 
 
 
@@ -139,55 +139,64 @@
   <div class="u-wrapper">
     <ul class="Banner">
         
+
       <li class="Banner-item ">
-        <a class="Banner-link u-clickable" href="/">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/">
           Home 
         </a>
-
-        
+         
       </li>
-
         
+
       <li class="Banner-item ">
-        <a class="Banner-link u-clickable" href="/sri_durgasaptashati/">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/sri_durgasaptashati/">
           Sri Durgasaptashati 
         </a>
-
-        
+         
       </li>
-
         
+
       <li class="Banner-item ">
-        <a class="Banner-link u-clickable" href="/posts/">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/posts/">
           Posts 
         </a>
-
-        
+         
       </li>
-
         
+
       <li class="Banner-item has-submenu">
-        <a class="Banner-link u-clickable" href="/#">
+        
+        <span class="Banner-link menu-label">
           About 
           <span class="submenu-toggle" onclick="toggleSubmenu(event)">▼</span>
           
-        </a>
-
-        
+        </span>
+         
         <ul class="submenu">
           
           <li>
-            <a class="Banner-link" href="/about/web-development/">Web Development</a>
+            <a class="Banner-link" href="/my-hugo-site/aurobharati/">Web Development</a>
           </li>
           
           <li>
-            <a class="Banner-link" href="/about/seo/">SEO</a>
+            <a class="Banner-link" href="/my-hugo-site/contact/">SEO</a>
           </li>
           
         </ul>
         
       </li>
+        
 
+      <li class="Banner-item ">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/contact/">
+          Contact 
+        </a>
+         
+      </li>
       
     </ul>
   </div>
@@ -199,18 +208,19 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <button id="closeBtn" class="close-toggle" onclick="toggleMenu()">×</button>
     <div id="mobileMenu" class="mobile-menu">
-      <a class="Banner-link" href="/">SRI DURGASAPTASHATI</a>
+      <a class="Banner-link" href="/my-hugo-site/">SRI DURGASAPTASHATI</a>
+
         
 
       <div
         class="mobile-item "
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/"
-          >Home </a
-        >
-
         
+        <a href="/my-hugo-site/">
+          Home 
+        </a>
+         
       </div>
         
 
@@ -218,11 +228,11 @@
         class="mobile-item "
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/sri_durgasaptashati/"
-          >Sri Durgasaptashati </a
-        >
-
         
+        <a href="/my-hugo-site/sri_durgasaptashati/">
+          Sri Durgasaptashati 
+        </a>
+         
       </div>
         
 
@@ -230,11 +240,11 @@
         class="mobile-item "
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/posts/"
-          >Posts </a
-        >
-
         
+        <a href="/my-hugo-site/posts/">
+          Posts 
+        </a>
+         
       </div>
         
 
@@ -242,26 +252,38 @@
         class="mobile-item has-submenu"
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/#"
-          >About 
-          <span class="submenu-toggle">▼</span>
-          </a
-        >
-
         
+        <span>
+          About <span class="submenu-toggle">▼</span
+          >
+        </span>
+         
         <div class="mobile-submenu">
           
-          <a href="/about/web-development/">Web Development</a>
+          <a href="/my-hugo-site/aurobharati/">Web Development</a>
           
-          <a href="/about/seo/">SEO</a>
+          <a href="/my-hugo-site/contact/">SEO</a>
           
         </div>
         
+      </div>
+        
+
+      <div
+        class="mobile-item "
+        onclick="toggleMobileSubmenu(event)"
+      >
+        
+        <a href="/my-hugo-site/contact/">
+          Contact 
+        </a>
+         
       </div>
       
     </div>
   </div>
 </nav>
+
 
 <script>
   function toggleMenu() {
@@ -270,12 +292,13 @@
     menu.classList.toggle("show");
     wrapper.classList.toggle("menu-open");
   }
+
   function toggleMobileSubmenu(event) {
     
     if (window.innerWidth > 767) return;
 
-    
     const clickedEl = event.target;
+    
     if (clickedEl.tagName === "A" && !clickedEl.closest(".has-submenu")) return;
 
     const parent = event.currentTarget;
@@ -285,6 +308,13 @@
       event.preventDefault();
       submenu.classList.toggle("show");
     }
+  }
+
+  function toggleSubmenu(event) {
+    event.preventDefault();
+    const parent = event.target.closest(".Banner-item");
+    const submenu = parent.querySelector(".submenu");
+    if (submenu) submenu.classList.toggle("show");
   }
 </script>
 
@@ -302,6 +332,7 @@
     }
   }
 </style>
+
 <div
   class="page-wrapper"
   style="
@@ -314,41 +345,53 @@
   "
 >
   
+  
   <aside class="sidebar">
-     <div class="custom-box">
-  <h3>Default Sidebar</h3>
-  <ul>
-    <li><a href="/chapter_1/">Chapter 1</a></li>
-    <li><a href="/chapter_2/">Chapter 2</a></li>
-    <li><a href="/all-mantras/">All Mantras</a></li>
-  </ul>
+    
+      <div class="custom-box">
+  <div class="box_sadow1">
+    <h5>Default Sidebar</h5>
+    <p>class "mantra" is used to change the list deraction</p>
+  </div>
 </div>
-  
-  </aside>
-
-  
-  <main class="main-content" style="flex: 1">
-     <header class="Heading">
-  <h1 class="Heading-title">
-    <a class="Heading-link u-clickable" href="/chapter-7/m-1/" rel="bookmark">M 1</a>
-  </h1>
-  
-</header>  
-
-  
-
-  
-
-
-
-
- 
-  
 
     
+
+    
+  </aside>
+  
+
+  
+  <main class="main-content" style="flex: 1; padding: 20px;">
+    
+    <header class="Heading">
+  <h1 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/my-hugo-site/chapter-7/m-1/" rel="bookmark">M 1</a>
+  </h1>
+  
+</header>
+    
+    
+
+  
+
+  
+
+
+
+
+
+    
+  
+
+
+    
+    
     <nav class="post-nav">
-       
+      
+      
     </nav>
+    
   </main>
 </div>
 </div>

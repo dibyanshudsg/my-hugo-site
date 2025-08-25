@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/my-hugo-site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=my-hugo-site/livereload" data-no-instant defer></script>
      <meta charset="utf-8">
 
 
@@ -21,12 +21,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.147.9"> <title>Chapter 4 | SRI DURGASAPTASHATI</title> <link href="http://localhost:1313/chapter-4/" rel="canonical">
+<meta name="generator" content="Hugo 0.147.9"> <title>Chapter 4 | SRI DURGASAPTASHATI</title> <link href="http://localhost:1313/my-hugo-site/chapter-4/" rel="canonical">
 
 
 
 
-  <link href="alternate" rel="/chapter-4/feed.xml" type="application/rss+xml">
+  <link href="alternate" rel="/my-hugo-site/chapter-4/feed.xml" type="application/rss+xml">
  
 
 
@@ -36,7 +36,7 @@
 
 
     
-    <link href="/css/base.css" rel="stylesheet">
+    <link href="/my-hugo-site/css/base.css" rel="stylesheet">
 
 
 
@@ -141,55 +141,64 @@
   <div class="u-wrapper">
     <ul class="Banner">
         
+
       <li class="Banner-item ">
-        <a class="Banner-link u-clickable" href="/">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/">
           Home 
         </a>
-
-        
+         
       </li>
-
         
+
       <li class="Banner-item ">
-        <a class="Banner-link u-clickable" href="/sri_durgasaptashati/">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/sri_durgasaptashati/">
           Sri Durgasaptashati 
         </a>
-
-        
+         
       </li>
-
         
+
       <li class="Banner-item ">
-        <a class="Banner-link u-clickable" href="/posts/">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/posts/">
           Posts 
         </a>
-
-        
+         
       </li>
-
         
+
       <li class="Banner-item has-submenu">
-        <a class="Banner-link u-clickable" href="/#">
+        
+        <span class="Banner-link menu-label">
           About 
           <span class="submenu-toggle" onclick="toggleSubmenu(event)">▼</span>
           
-        </a>
-
-        
+        </span>
+         
         <ul class="submenu">
           
           <li>
-            <a class="Banner-link" href="/about/web-development/">Web Development</a>
+            <a class="Banner-link" href="/my-hugo-site/aurobharati/">Web Development</a>
           </li>
           
           <li>
-            <a class="Banner-link" href="/about/seo/">SEO</a>
+            <a class="Banner-link" href="/my-hugo-site/contact/">SEO</a>
           </li>
           
         </ul>
         
       </li>
+        
 
+      <li class="Banner-item ">
+        
+        <a class="Banner-link u-clickable" href="/my-hugo-site/contact/">
+          Contact 
+        </a>
+         
+      </li>
       
     </ul>
   </div>
@@ -201,18 +210,19 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <button id="closeBtn" class="close-toggle" onclick="toggleMenu()">×</button>
     <div id="mobileMenu" class="mobile-menu">
-      <a class="Banner-link" href="/">SRI DURGASAPTASHATI</a>
+      <a class="Banner-link" href="/my-hugo-site/">SRI DURGASAPTASHATI</a>
+
         
 
       <div
         class="mobile-item "
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/"
-          >Home </a
-        >
-
         
+        <a href="/my-hugo-site/">
+          Home 
+        </a>
+         
       </div>
         
 
@@ -220,11 +230,11 @@
         class="mobile-item "
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/sri_durgasaptashati/"
-          >Sri Durgasaptashati </a
-        >
-
         
+        <a href="/my-hugo-site/sri_durgasaptashati/">
+          Sri Durgasaptashati 
+        </a>
+         
       </div>
         
 
@@ -232,11 +242,11 @@
         class="mobile-item "
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/posts/"
-          >Posts </a
-        >
-
         
+        <a href="/my-hugo-site/posts/">
+          Posts 
+        </a>
+         
       </div>
         
 
@@ -244,26 +254,38 @@
         class="mobile-item has-submenu"
         onclick="toggleMobileSubmenu(event)"
       >
-        <a href="/#"
-          >About 
-          <span class="submenu-toggle">▼</span>
-          </a
-        >
-
         
+        <span>
+          About <span class="submenu-toggle">▼</span
+          >
+        </span>
+         
         <div class="mobile-submenu">
           
-          <a href="/about/web-development/">Web Development</a>
+          <a href="/my-hugo-site/aurobharati/">Web Development</a>
           
-          <a href="/about/seo/">SEO</a>
+          <a href="/my-hugo-site/contact/">SEO</a>
           
         </div>
         
+      </div>
+        
+
+      <div
+        class="mobile-item "
+        onclick="toggleMobileSubmenu(event)"
+      >
+        
+        <a href="/my-hugo-site/contact/">
+          Contact 
+        </a>
+         
       </div>
       
     </div>
   </div>
 </nav>
+
 
 <script>
   function toggleMenu() {
@@ -272,12 +294,13 @@
     menu.classList.toggle("show");
     wrapper.classList.toggle("menu-open");
   }
+
   function toggleMobileSubmenu(event) {
     
     if (window.innerWidth > 767) return;
 
-    
     const clickedEl = event.target;
+    
     if (clickedEl.tagName === "A" && !clickedEl.closest(".has-submenu")) return;
 
     const parent = event.currentTarget;
@@ -287,6 +310,13 @@
       event.preventDefault();
       submenu.classList.toggle("show");
     }
+  }
+
+  function toggleSubmenu(event) {
+    event.preventDefault();
+    const parent = event.target.closest(".Banner-item");
+    const submenu = parent.querySelector(".submenu");
+    if (submenu) submenu.classList.toggle("show");
   }
 </script>
 
@@ -307,6 +337,7 @@
     }
   }
 </style>
+
 <div
   class="page-wrapper"
   style="
@@ -393,25 +424,23 @@
   </aside>
 
   
-  <main class="content">
+  <main class="content" style="flex: 1; padding: 20px">
      <header class="Heading">
   <h1 class="Heading-title">
-    <a class="Heading-link u-clickable" href="/chapter-4/" rel="bookmark">Chapter 4</a>
+    <a class="Heading-link u-clickable" href="/my-hugo-site/chapter-4/" rel="bookmark">Chapter 4</a>
   </h1>
   
 </header>  
     <div class="dm_con">
-      <h5>2025</h5>
       <ul id="m_list">
         
         <li class="mantra">
-          2025-07-25 –
-          <a class="m_link" href="/chapter-4/m-1/">M 1</a>
+          <a class="m_link" href="/my-hugo-site/chapter-4/m-1/">M 1</a>
         </li>
         
       </ul>
-      
     </div>
+    
   </main>
 </div>
 </div>
