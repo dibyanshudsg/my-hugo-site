@@ -245,7 +245,7 @@ u-padding
   }
 
   .Divider::after {
-    content: "/categories";
+    content: "/";
   }
 
 
