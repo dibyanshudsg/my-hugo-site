@@ -245,7 +245,7 @@ u-padding
   }
 
   .Divider::after {
-    content: "C:/Hugo/my_website/content/aurobharati.md";
+    content: "/categories";
   }
 
 
